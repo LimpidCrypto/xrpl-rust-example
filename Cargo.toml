@@ -1,0 +1,12 @@
+[package]
+name = "rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+xrpl-rust = { git = "https://github.com/sephynox/xrpl-rust", branch = "dev", default-features = false, features = [
+    "models",
+    "websocket",
+] }
+tokio = { version = "1", features = ["full", "rt"] }
+rand = "0.8.5"
